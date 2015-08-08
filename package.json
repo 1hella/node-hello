@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "npm introduction",
   "main": "app.js",
+  "scripts": {
+  	"start": "node app.js"
+  	},
   "dependencies": {
     "consolidate": "~0.9.1",
     "express": "3.x",
