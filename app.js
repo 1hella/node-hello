@@ -10,8 +10,14 @@ app.get('/', function(req, res){
   res.render('hello', { name : 'World' });
 });
 
-app.get('*', function(req, res){
-  res.render('hello', { name : req.url.substr(1, req.url.length) });
+app.get('*', function(req, res) {
+  console.log(req.params);
+  res.render('hello', { 
+    name : req.params[0].
+    substring(1, req.params[0].length).
+    split('/').
+    join(', ') 
+  });
 });
 
 app.listen(process.env.PORT || 5000);
