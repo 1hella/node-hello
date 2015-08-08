@@ -15,5 +15,5 @@ app.get('*', function(req, res){
     res.render('hello', { name : req.url.substr(1, req.url.length) });
 });
 
-app.listen(8080);
+app.listen(80);
 console.log('Express server started on port 8080');
