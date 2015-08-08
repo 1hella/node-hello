@@ -15,4 +15,5 @@ app.get('*', function(req, res){
 });
 
 app.listen(process.env.PORT || 5000);
+console.log('Express server started on port', process.env.PORT || 5000);
 
